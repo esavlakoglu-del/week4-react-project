@@ -1,30 +1,35 @@
-import Header from "@/Components/Header";
-import Footer from "@/Components/Footer";
-import Nav from "@/Components/Nav";
-import Card from "@/Components/Card";
-import ThemeToggle from "@/Components/ThemeToggle";
-import ContactForm from "@/Components/ContactForm";
+import Header from "@/components/Header";
+import Footer from "@/components/Footer";
+import Nav from "@/components/Nav";
+import Card from "@/components/Card";
+import ContactForm from "@/components/ContactForm";
+import ThemeToggle from "@/components/ThemeToggle";
 
 export default function Home() {
   return (
-    <main>
-      <Header />
-      <Nav />
+    <div className="min-h-screen p-10 bg-gray-100 text-black">
 
-      <h2>Week 4 React Component Project</h2>
+      <h1 className="text-4xl font-bold mb-6">
+        My Website
+      </h1>
+      <main className="space-y-6"> 
+        <Header />
+        <Nav />
 
-      <Card title="Feature One" description="This is the first reusable card." />
-      <Card title="Feature Two" description="This is the second reusable card." />
-      <Card title="Feature Three" description="This is the third reusable card." />
+        <h2>Week 4 React Component Project</h2>
 
-      <ThemeToggle />
+<Card title="Feature One" description="This is the first reusable card." />
+<Card title="Feature Two" description="This is the second reusable card." />
+<Card title="Feature Three" description="This is the third reusable card." />
 
-      <br />
-      <br />
+        <ThemeToggle />
 
-      <ContactForm />
+        <ContactForm />
 
-      <Footer />
-    </main>
+        <Footer />
+
+       </main>
+       
+       </div>
   );
 }
