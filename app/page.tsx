@@ -5,6 +5,7 @@ import Nav from "@/components/Nav";
 import Card from "@/components/Card";
 import ContactForm from "@/components/ContactForm";
 import ThemeToggle from "@/components/ThemeToggle";
+import AuthButton from "@/components/AuthButton";
 
 export default function Home() {
   return (
@@ -14,6 +15,7 @@ export default function Home() {
         My Website
       </h1>
       <main className="space-y-6"> 
+        <AuthButton />
         <Header />
         <Nav />
 
